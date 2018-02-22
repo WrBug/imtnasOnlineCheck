@@ -1,4 +1,4 @@
-PUBLIC_IP=$(wget -t 1 -T 5 -qO- http://whatismyip.akamai.com)
+PUBLIC_IP=$(wget -t 3 -T 15 -qO- http://whatismyip.akamai.com)
 PRIVATE_IP=$(ip -4 route get 1 | awk '{print $NF;exit}')
 TIME=$(date +%Y.%m.%d\(%H.%M.%S\))
 NO_NETWORK_LOG_FILE=${TIME}'.txt'
