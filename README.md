@@ -46,7 +46,7 @@ service cron restart
 service cron status
 
 // 查看脚本实时运行状态(安装脚本一分钟后才能显示)
-tail -f /home/checkOnline/checkLog/log.out
+tail -f /usr/checkOnline/checkLog/log.out
 ```
 
 [1]: https://www.token.soy
