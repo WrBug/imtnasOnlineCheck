@@ -35,11 +35,7 @@ wget https://raw.githubusercontent.com/WrBug/imtnasOnlineCheck/master/setup.sh -
 
 等待安装完成即可
 
-### 注意  2018-2-23号以前使用过此脚本的请删除 /home/checkOnline  目录。命令
 
-```
-rm -rf /home/checkOnline
-```
 
 ### 其他命令
 
