@@ -11,6 +11,12 @@
 
 [https://www.token.soy][1]
 
+### 功能
+
+1. 网络离线检测
+2. cpu检测
+
+
 ### 使用方法
 
 1. 使用ssh登录星际魔盒,windows使用putty登录，linux或mac使用下面命令
