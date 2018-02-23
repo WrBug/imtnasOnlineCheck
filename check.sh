@@ -20,3 +20,4 @@ echo '--------------------'>>  ${LOG_DIR}/${NORMAL_LOG_FILE}
 echo '检查时间：'${TIME} >>  ${LOG_DIR}/${NORMAL_LOG_FILE}
 echo '公网IP:'${PUBLIC_IP} >> ${LOG_DIR}/${NORMAL_LOG_FILE}
 echo '内网IP：'$PRIVATE_IP >> ${LOG_DIR}/${NORMAL_LOG_FILE}
+echo 'cpu正常' >> ${LOG_DIR}/${NORMAL_LOG_FILE}
