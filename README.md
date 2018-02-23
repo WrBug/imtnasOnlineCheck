@@ -35,6 +35,11 @@ wget https://raw.githubusercontent.com/WrBug/imtnasOnlineCheck/master/setup.sh -
 
 等待安装完成即可
 
+### 注意  2018-2-23号以前使用过此脚本的请删除 /home/checkOnline  目录。命令
+
+```
+rm -rf /home/checkOnline
+```
 
 ### 其他命令
 
@@ -48,5 +53,6 @@ service cron status
 // 查看脚本实时运行状态(安装脚本一分钟后才能显示)
 tail -f /usr/checkOnline/checkLog/log.out
 ```
+
 
 [1]: https://www.token.soy
