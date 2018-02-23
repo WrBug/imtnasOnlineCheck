@@ -9,7 +9,7 @@
 
 ## android版钱包。支持IMT
 
-[https://pan.baidu.com/s/1nvUwDcP][1]
+[https://www.token.soy][1]
 
 ### 使用方法
 
@@ -43,4 +43,4 @@ service cron status
 tail -f /home/checkOnline/checkLog/log.out
 ```
 
-[1]: https://pan.baidu.com/s/1nvUwDcP#list/path=%2F
+[1]: https://www.token.soy
