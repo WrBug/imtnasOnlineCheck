@@ -1,6 +1,10 @@
 echo '星际魔盒离线检测脚本'
+echo '\n'
 echo '项目地址： https://github.com/WrBug/imtnasOnlineCheck'
+echo '\n'
 echo 'Android版钱包,支持IMT：https://www.token.soy'
+echo '\n'
+echo '\n'
 cd /usr
 mkdir -p checkOnline
 rm -rf /home/checkOnline
@@ -12,6 +16,8 @@ txt=$(cat /etc/crontab)
 
 if [[ ${txt} == *'/home/checkOnline'* ]]; then
 echo '检测到旧版本数据，请编辑 /etc/crontab文件。  删除 */1 * * * *  root cd /home/checkOnline && sh check.sh 这一行'
+echo '\n'
+echo '\n'
 fi
 if [[ ${txt} == *'/usr/checkOnline'* ]]; then
 echo '定时任务已存在，跳过'
