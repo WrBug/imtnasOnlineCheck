@@ -1,8 +1,8 @@
-echo '星际魔盒离线检测脚本'
+echo '星际魔盒离线检测脚本\n'
 echo '\n'
-echo '项目地址： https://github.com/WrBug/imtnasOnlineCheck'
+echo '项目地址： https://github.com/WrBug/imtnasOnlineCheck\n'
 echo '\n'
-echo 'Android版钱包,支持IMT：https://www.token.soy'
+echo 'Android版钱包,支持IMT：https://www.token.soy\n\n'
 echo '\n'
 echo '\n'
 cd /usr
