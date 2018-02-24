@@ -1,9 +1,9 @@
 PUBLIC_IP=$(wget -t 3 -T 15 -qO- http://whatismyip.akamai.com)
 PRIVATE_IP=$(ip -4 route get 1 | awk '{print $NF;exit}')
 TIME=$(date +%Y.%m.%d\(%H.%M.%S\))
-EXCEPTION_LOG_FILE=${TIME}'.txt'
+EXCEPTION_LOG_FILE=${TIME}'重启.txt'
 NORMAL_LOG_FILE='log.out'
-LOG_DIR='checkLog'
+LOG_DIR='/home/admin/checkLog'
 mkdir -p ${LOG_DIR}
 if [ -z "${PUBLIC_IP}" ]; then
   echo '无网络，重启' > ${LOG_DIR}/${EXCEPTION_LOG_FILE}
