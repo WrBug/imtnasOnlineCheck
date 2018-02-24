@@ -27,3 +27,4 @@ echo '*/1 * * * *  root cd /usr/checkOnline && sh check.sh' >> /etc/crontab
 fi
 service cron restart
 echo '脚本配置成功,服务已启动'
+echo '一分钟后可以通过命令：tail -f /home/admin/checkLog/log.out  查看运行状态'
