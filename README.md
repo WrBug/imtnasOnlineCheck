@@ -56,7 +56,7 @@ service cron status
 tail -f /home/admin/checkLog/log.out
 
 // 同步时间
-ntpdate time.nist.gov
+ntpdate 1.cn.pool.ntp.org
 
 // 查看系统时间
 date
