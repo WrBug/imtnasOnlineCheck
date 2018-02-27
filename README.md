@@ -11,10 +11,16 @@
 
 [https://www.token.soy][1]
 
+## 2018/2/27更新
+增加sleepingTask检测
+调整cpu超过70%重启
+将日志文件移到/home/admin/checkLog目录。使用云搬家app可以看到日志文件
+
 ### 功能
 
 1. 网络离线检测
-2. cpu检测(超过80%重启)
+2. cpu检测(超过70%重启)
+
 
 
 ### 使用方法
@@ -48,6 +54,18 @@ service cron status
 
 // 查看脚本实时运行状态(安装脚本一分钟后才能显示)
 tail -f /home/admin/checkLog/log.out
+
+// 同步时间
+ntpdate time.nist.gov
+
+// 查看系统时间
+date
+
+// 同步时间 命令运行出现（the NTP socket is in use, exiting）时 运行
+ps aux | grep ntpd
+//然后找到ntp       xxxx  0.0  0.2   5072  1544 ?        Ss   12:00   0:01 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 102:107这一行,找到xxxx代表的值。执行：
+kill -9 xxxx
+
 ```
 
 
