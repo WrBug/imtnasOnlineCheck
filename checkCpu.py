@@ -4,7 +4,7 @@ if __name__=="__main__":
         avaCpu=output.read()
         avaCpu=re.search(r'\d+',avaCpu).group()
         avaCpu = int(str(avaCpu))
-        if avaCpu<20 :
+        if avaCpu<30 :
                 print 'Cpu'
         else :
                 output = os.popen('top -n 1 |grep Task | cut -d "," -f 3 | cut -d " " -f 2')
