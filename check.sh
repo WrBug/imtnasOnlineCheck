@@ -10,9 +10,14 @@ if [ -z "${PUBLIC_IP}" ]; then
   shutdown -r now
   exit
 fi
-LOW_CPU=$(python checkCpu.py)
-if [ $LOW_CPU == 'True' ]; then
+result=$(python checkCpu.py)
+if [ $result == 'Cpu' ]; then
   echo 'cpu使用过多，重启' > ${LOG_DIR}/${EXCEPTION_LOG_FILE}
+  shutdown -r now
+  exit     
+fi
+if [ $result == 'Cpu' ]; then
+  echo 'sleepingTask 过多，重启' > ${LOG_DIR}/${EXCEPTION_LOG_FILE}
   shutdown -r now
   exit     
 fi
